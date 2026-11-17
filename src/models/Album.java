@@ -42,6 +42,9 @@ public class Album {
     public void setReleaseYear(int releaseYear) { this.releaseYear = releaseYear; }
     public void setArtistId(String artistId) { this.artistId = normalizeArtistId(artistId); }
     public void setArtistId(int artistId) { this.artistId = artistId <= 0 ? "Неизвестно" : String.valueOf(artistId); }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {

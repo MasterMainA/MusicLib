@@ -42,6 +42,9 @@ public class Track {
     public void setDurationSeconds(int durationSeconds) { this.durationSeconds = durationSeconds; }
     public void setAlbumId(String albumId) { this.albumId = normalizeAlbumId(albumId); }
     public void setAlbumId(int albumId) { this.albumId = albumId <= 0 ? "Сингл" : String.valueOf(albumId); }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {

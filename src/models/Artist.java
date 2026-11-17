@@ -42,6 +42,10 @@ public class Artist {
     public void setCountry(String country) {
         this.country = country;}
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Исполнитель [ID: " + id + "] " + name + " (Жанр: " + genre + ")" + " Страна: " + country;   }
